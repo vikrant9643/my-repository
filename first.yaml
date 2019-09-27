@@ -4,12 +4,12 @@
    tasks: 
      - name: create a directory
        file:
-         name: dir1 
-         path: /tmp/
+        
+         path: /tmp/vicky
          state: directory
-         register: vikrant
+       register: vikrant
 
-       - name: check the debug
-         debug:
-           var: vikrant      
+     - name: check the debug
+       debug:
+         var: vikrant      
 
