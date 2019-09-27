@@ -6,9 +6,9 @@
          file:
             path: /tmp/vicky
             state: directory
-         register: vikrant
+         register: MANNU
 
        - name: check the debug
          debug:
-             var: vikrant      
+             var: MANNU     
 
