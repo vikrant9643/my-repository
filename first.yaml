@@ -2,14 +2,13 @@
    hosts: all
    become: true
    tasks: 
-     - name: create a directory
-       file:
-        
-         path: /tmp/vicky
-         state: directory
-       register: vikrant
+       - name: create a directory
+         file:
+            path: /tmp/vicky
+            state: directory
+         register: vikrant
 
-     - name: check the debug
-       debug:
-         var: vikrant      
+       - name: check the debug
+         debug:
+             var: vikrant      
 
